@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(4, 167, 4),rgba(0, 0, 255, 0.733));
+}
+.registration-form{
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    width: calc(100vw-65vw);
+    max-width: 100%;
+}
+.registration-form h1{
+    font-size: 1.5rem;
+    line-height: 60px;
+    text-align: center;
+    background-color: gray;
+}
+.form{
+    padding: 15px;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    position: relative;
+}
+.form-control label{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.form-control input{
+    padding: 10px;
+    width: 350px;
+    /* outline: none; */
+    border: 2px solid rgb(182, 178, 178);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.form-control input:focus{
+    /* outline: 0; */
+    outline: none;
+    border: 2px solid black;
+}
+.btn{
+    background-color: lightblue;
+    border-radius: 6px;
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    border: 2px solid ;
+}
+.form-control i{
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    visibility: hidden;
+}
+.form-control.success input{
+    border-color: green;
+    visibility: visible;
+}
+.form-control.error input{
+    border-color: red;
+    visibility: visible;
+}
+.form-control.success i.fa-check-circle{
+    color: green;
+    visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle{
+    color: red;
+    visibility: visible;
+}
+.form-control small{
+    color: red;
+    visibility: hidden;
+}
+.form-control.error small{
+    visibility: visible;
+}
